@@ -1,12 +1,14 @@
+
+
 #include <cstddef>
 #include <iostream>
-struct MyVector
+struct myVector
 {
     int* arr;
     size_t size, capacity;
 
     // member functions
-    void vector_new (size_t sz = 0);
+    void vector_new(size_t sz = 0);
     void vector_delete();
     void vector_push_back(int n);/* adds a new element at the end of the vector */
     void vector_pop_back();/* removes the last element in the vector */
@@ -16,4 +18,4 @@ struct MyVector
 
     void print_vector();
 };
-
+#pragma once

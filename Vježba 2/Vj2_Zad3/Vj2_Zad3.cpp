@@ -49,7 +49,7 @@ void unosKruznice(kruznica *kr)
     cin >> kr->S.y;
 }
 
-int presjecanje(const kruznica& kr, pravokutnik *niz, int n)
+int presjecanje(const kruznica& kr, const pravokutnik *niz, int n)
 {
     tocka T;
     int br = 0;

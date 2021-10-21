@@ -1,38 +1,55 @@
+
+
 #include "vector.hpp"
+using namespace std;
+void myVector::vector_new(size_t sz)
+{
+    arr = new int[sz];
+    size = 0;
+    capacity = 1;
+}
+void myVector::vector_delete()
+{
+    delete[] arr;
+}
+void myVector::vector_push_back(int n)
+{
+    if (size == capacity)
+    {
+        capacity *= 2;
+        int* arrN = new int[capacity];
+        for (int i = 0; i < (capacity - 1); i++)
+        {
+            arrN[i] = arr[i];
+        }
 
-void MyVector::vector_new (size_t sz)
-{
-    /* TODO */
-}
-void MyVector::vector_delete()
-{
-    /* TODO */
-}
-void MyVector::vector_push_back(int n)
-{
-    /* TODO */
-}
-void MyVector::vector_pop_back()
-{
-    /* TODO */
-}
-int& MyVector::vector_front()
-{
-    /* TODO */
-}
-int& MyVector::vector_back()
-{
-    /* TODO */
-}
-size_t MyVector::vector_size()
-{
-    /* TODO */
-}
+        delete[] arr;
 
+        arr = arrN;
+    }
 
-void MyVector::print_vector()
+    arr[size] = n;
+    size++;
+}
+void myVector::vector_pop_back()
 {
-    for (size_t i = 0; i < vector_size(); ++i)
-        std::cout << arr[i] << " ";
-    std::cout << std::endl;
+    size -= 1;
+}
+int& myVector::vector_front()
+{
+    return arr[0];
+}
+int& myVector::vector_back()
+{
+    return arr[size - 1];
+}
+size_t myVector::vector_size()
+{
+    return size;
+}
+void myVector::print_vector()
+{
+    for (size_t i = 0; i < vector_size(); i++)
+        cout << arr[i] << " ";
+    cout << endl;
 }
