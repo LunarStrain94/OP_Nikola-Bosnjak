@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1634833259 source:c:\users\nikola\desktop\fakultet ovo-ono\2. godina\objektno programiranje\vježba 2\vj2_zad4\vj2_zad4.cpp
+	"vector.hpp"
+
+1634834336 c:\users\nikola\desktop\fakultet ovo-ono\2. godina\objektno programiranje\vježba 2\vj2_zad4\vector.hpp
+	<cstddef>
+	<iostream>
+
+1634834336 source:c:\users\nikola\desktop\fakultet ovo-ono\2. godina\objektno programiranje\vježba 2\vj2_zad4\vector.cpp
+	"vector.hpp"
+
