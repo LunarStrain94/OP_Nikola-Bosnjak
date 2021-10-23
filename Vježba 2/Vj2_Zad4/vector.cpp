@@ -1,5 +1,3 @@
-
-
 #include "vector.hpp"
 using namespace std;
 void myVector::vector_new(size_t sz)
