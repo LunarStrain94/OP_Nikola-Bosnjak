@@ -1,0 +1,4 @@
+﻿  Vj5_Zad2.cpp
+C:\Users\Nikola\Desktop\Fakultet ovo-ono\2. Godina\Objektno programiranje\Vježba 5\Vj5_Zad1\Vj5_Zad2\Vj5_Zad2.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Nikola\Desktop\Fakultet ovo-ono\2. Godina\Objektno programiranje\Vježba 5\Vj5_Zad1\Vj5_Zad2\Vj5_Zad2.cpp(8,32): warning C4101: 'angle': unreferenced local variable
+  Vj5_Zad2.vcxproj -> C:\Users\Nikola\Desktop\Fakultet ovo-ono\2. Godina\Objektno programiranje\Vježba 5\Vj5_Zad1\x64\Debug\Vj5_Zad2.exe
