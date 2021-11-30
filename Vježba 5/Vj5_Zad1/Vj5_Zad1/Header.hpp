@@ -13,9 +13,13 @@ public:
 		y = 0;
 		z = 0;
 	};
-	void setValue(double x, double y, double z);
+	void setValueX(double x1);
+	double getValueX();
+	void setValueY(double y1);
+	double getValueY();
+	void setValueZ(double z1);
+	double getValueZ();
 	void generate(double min, double max);
-	void getValue(double& x, double& y, double& z);
 	double distance2d(Point& p1, Point& p2) const;
 	double distance3d(Point& p1, Point& p2) const;
 };

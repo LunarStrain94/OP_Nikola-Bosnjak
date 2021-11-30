@@ -4,12 +4,21 @@ int main()
 {
 	srand(time(NULL));
 	Point a1, a2;
-	double x = 0, y = 0, z = 0, x2 = 0, y2 = 0, z2 = 0;
+	double x, y, z, x2, y2, z2;
 
-	a1.setValue(x, y, z);
-	a1.getValue(x, y, z);
-	a1.setValue(x2, y2, z2);
-	a1.getValue(x2, y2, z2);
+	a1.setValueX(1);
+	a1.setValueY(2);
+	a1.setValueZ(3);
+	x = a1.getValueX();
+	y = a1.getValueY();
+	z = a1.getValueZ();
+
+	a1.setValueX(4);
+	a1.setValueY(5);
+	a1.setValueZ(6);
+	x2 = a1.getValueX();
+	y2 = a1.getValueY();
+	z2 = a1.getValueZ();
 
 	double dis2 = a1.distance2d(a1, a2);
 	double dis3 = a1.distance3d(a1, a2);

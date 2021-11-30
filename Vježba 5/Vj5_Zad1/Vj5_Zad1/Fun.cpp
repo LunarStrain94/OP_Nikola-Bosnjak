@@ -1,16 +1,33 @@
 #include "Header.hpp"
 
-void Point::setValue(double x, double y, double z)
+void Point::setValueX(double x1)
 {
-	cout << "x: ";
-	cin >> x;
-	cout << "y: ";
-	cin >> y;
-	cout << "z: ";
-	cin >> z;
-	Point::x = x;
-	Point::y = y;
-	Point::z = z;
+	x = x1;
+}
+
+double Point::getValueX()
+{
+	return x;
+}
+
+void Point::setValueY(double y1)
+{
+	y = y1;
+}
+
+double Point::getValueY()
+{
+	return y;
+}
+
+void Point::setValueZ(double z1)
+{
+	z = z1;
+}
+
+double Point::getValueZ()
+{
+	return z;
 }
 
 void Point::generate(double min, double max)
@@ -23,12 +40,7 @@ void Point::generate(double min, double max)
 	Point::z = min + f * (max - min);
 }
 
-void Point::getValue(double& x, double& y, double& z)
-{
-	x = Point::x;
-	y = Point::y;
-	z = Point::z;
-}
+
 
 double Point::distance2d(Point& p1, Point& p2) const
 {

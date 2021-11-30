@@ -20,11 +20,12 @@ int main()
 
 	for (int i = 0; i < n; ++i)
 	{
-		if (tarArr[i].update(gun) == true)
+		if (gun.getMagstate() == 0)
+			break;
+		if (tarArr[i].update(gun))
 		{
 			++cnt;
 			gun.shoot();
-			//cout << i << " ";
 		}
 	}
 
